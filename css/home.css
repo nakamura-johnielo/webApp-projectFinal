@@ -38,8 +38,8 @@ body {
 
 .contents-container {
   /* margin-top: 30px; */
+  padding-top: 40px;
   margin-left: 80px;
-  background-color: aqua;
 }
 .contents-left-container {
   /* background-color: antiquewhite; */
@@ -54,15 +54,13 @@ body {
   align-items: center; /* 左右方向（横方向）の中央寄せ */
   width: 30vw;
   min-width: 300px; /* コンテンツの最小横幅を設定 */
+  padding-left: 27px;
 }
 
 .calender {
   width: 240px;
   height: 240px;
-  color: white;
   text-align: center;
-  /* background: rgb(41, 41, 41); */
-  background: linear-gradient(132deg, rgb(53, 53, 53) 0%, rgb(21, 21, 21) 100%);
   border-radius: 30px;
 }
 
@@ -74,4 +72,105 @@ body {
   /* background: rgb(41, 41, 41); */
   background: linear-gradient(158deg, rgb(53, 53, 53) 0%, rgb(21, 21, 21) 100%);
   border-radius: 30px;
+}
+
+.below-container {
+  margin-top: 20px;
+  padding-inline: 20px;
+  justify-content: space-between;
+}
+.category {
+  /* width: 120px; */
+  flex-grow: 2;
+  height: 360px;
+  color: white;
+  /* background: rgb(41, 41, 41); */
+  background: linear-gradient(132deg, rgb(53, 53, 53) 0%, rgb(21, 21, 21) 100%);
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.category + .category {
+  margin-left: 10px; /* 2番目以降の要素に左側のマージンを設定 */
+}
+
+.c1 {
+  background: rgb(250, 189, 53);
+  background: linear-gradient(
+    157deg,
+    rgba(250, 189, 53, 1) 0%,
+    rgba(245, 80, 39, 1) 100%
+  );
+}
+
+.c2 {
+  background: rgb(34, 174, 148);
+  background: linear-gradient(
+    157deg,
+    rgba(34, 174, 148, 1) 0%,
+    rgba(21, 93, 196, 1) 100%
+  );
+}
+.c3 {
+  background: rgb(244, 217, 191);
+  background: linear-gradient(
+    157deg,
+    rgba(244, 217, 191, 1) 0%,
+    rgba(240, 44, 113, 1) 100%
+  );
+}
+.c4 {
+  background: rgb(76, 22, 104);
+  background: linear-gradient(
+    157deg,
+    rgba(76, 22, 104, 1) 0%,
+    rgba(55, 150, 225, 1) 100%
+  );
+}
+
+.category-title {
+  font-size: 3em;
+}
+.category-amount {
+  font-size: 2em;
+}
+
+.upper-container {
+  padding-inline: 20px;
+  justify-content: space-between;
+}
+
+.prime {
+  /* width: 340px; */
+  height: 340px;
+  border-radius: 30px;
+  flex-grow: 3;
+}
+
+.gradient-black {
+  color: white;
+  /* background: rgb(41, 41, 41); */
+  background: linear-gradient(132deg, rgb(53, 53, 53) 0%, rgb(21, 21, 21) 100%);
+}
+
+.notification-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  flex-grow: 2;
+}
+
+.notification {
+  text-align: left;
+  padding: 15px;
+  border-radius: 20px;
+  flex-grow: 1;
+  width: 100%;
+  margin-inline: 20px;
+}
+
+.notification + .notification {
+  margin-top: 10px; /* 2番目以降の要素に左側のマージンを設定 */
 }
