@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /* paddingとborderを含める */
+}
+html,
+body {
+  height: auto;
+  margin: 0;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+/* .menu-bar-container {
+
+  margin-right: 20px;
+  margin-block: 0px;
+} */
+.menu-bar {
+  position: fixed; /* メニューバーを画面に固定 */
+  top: 0; /* 画面上端に配置 */
+  left: 0; /* 画面左端に配置 */
+  background-color: #262626;
+  width: 80px;
+  height: 600px;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  border-radius: 0 0 20px 0; /* 右下のみを角丸にする */
+}
+
+.contents-container {
+  /* margin-top: 30px; */
+  margin-left: 80px;
+  background-color: aqua;
+}
+.contents-left-container {
+  /* background-color: antiquewhite; */
+  width: 60vw;
+  min-width: 600px; /* コンテンツの最小横幅を設定 */
+}
+
+.contents-right-container {
+  /* background-color: teal; */
+  /* display: flex;
+  flex-direction: column;  */ /* 要素を縦に並べる */
+  align-items: center; /* 左右方向（横方向）の中央寄せ */
+  width: 30vw;
+  min-width: 300px; /* コンテンツの最小横幅を設定 */
+}
+
+.calender {
+  width: 240px;
+  height: 240px;
+  color: white;
+  text-align: center;
+  /* background: rgb(41, 41, 41); */
+  background: linear-gradient(132deg, rgb(53, 53, 53) 0%, rgb(21, 21, 21) 100%);
+  border-radius: 30px;
+}
+
+.history {
+  color: white;
+  width: 240px;
+  padding: 16px;
+  margin-top: 9px;
+  /* background: rgb(41, 41, 41); */
+  background: linear-gradient(158deg, rgb(53, 53, 53) 0%, rgb(21, 21, 21) 100%);
+  border-radius: 30px;
+}
